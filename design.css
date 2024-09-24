@@ -1,0 +1,107 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.title {
+    margin-bottom: 2rem;
+    border: 0.3rem solid black;
+    padding: 1rem;
+    font-size: x-large;
+    font-weight: 900;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 1rem;
+    border: 10px solid black;   
+}
+.card > div :not(.image,.form){
+    width: 70%;
+    border: 3px solid black;
+}
+.image{
+    /* object-fit: contain; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 12rem;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelQ-AgS2qILX_nxmAb4hC-BUK8N0ArHUKTQ&ss); */
+    /* background-color: red; */
+}
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+#handle_name{
+    width: 60%;
+}
+#myBtn{
+    width: 30%;
+}
+form > * {
+
+}
+.schema {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: royalblue;
+}
+.schema > div{
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    width: 22%;
+    background-color: peachpuff;
+    height:  fit-content;
+    border: 0.2rem solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.schema > div:nth-child(1)
+{
+    width: 37%;
+}
+.rating_content > div{
+    text-align: center;
+}
+.container {
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
+    background-color: royalblue;
+    border: 0.2rem solid peachpuff;
+}
+.content{
+    padding: 0.2rem;
+    width: 22%;
+    background-color: peachpuff;
+    height: 100%;
+    border: 0.2rem solid black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+}
+.container :nth-child(1)
+{
+    width: 37%;
+}
